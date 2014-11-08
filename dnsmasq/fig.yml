@@ -1,7 +1,7 @@
 dnsmasq:
   build: .
   ports:
-    - "53:53"
+    - "53:53/udp"
   volumes:
     - dnsmasq.conf:/etc/dnsmasq.conf:ro
   dns:
