@@ -1,0 +1,10 @@
+sniproxy:
+  build: .
+  ports:
+    - "443:443"
+  volumes:
+    - sniproxy.conf:/etc/sniproxy.conf:rw
+  dns:
+    - 114.114.114.114
+    - 114.114.115.115
+
