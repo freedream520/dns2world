@@ -4,7 +4,6 @@ dnsmasq:
     - "53:53"
   volumes:
     - dnsmasq.conf:/etc/dnsmasq.conf:ro
-    - dnsmasq.d:/etc/dnsmasq.d
   dns:
     - 114.114.114.114
     - 114.114.115.115
