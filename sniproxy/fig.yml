@@ -5,6 +5,5 @@ sniproxy:
   volumes:
     - sniproxy.conf:/etc/sniproxy.conf:ro
   dns:
-    - 114.114.114.114
-    - 114.114.115.115
-
+    - 8.8.8.8
+    - 8.8.4.4
